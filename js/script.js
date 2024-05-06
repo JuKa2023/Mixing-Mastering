@@ -62,7 +62,7 @@ function createCard(pokemon) {
     // HP
     let hp = document.createElement("p");
     hp.classList.add('hp');
-    hp.textContent = 'HP: ' + pokemon.stats[0].base_stat;
+    hp.textContent = 'HP ' + pokemon.stats[0].base_stat;
     card.appendChild(hp);
 
     // Image
@@ -95,17 +95,17 @@ function createCard(pokemon) {
     
     // Attack
     let attack = document.createElement("p");
-    attack.textContent = 'Attack: ' + pokemon.stats[0].base_stat;
+    attack.textContent = 'Attack' + pokemon.stats[0].base_stat;
     stats.appendChild(attack);
 
     // Defense
     let defense = document.createElement("p");
-    defense.textContent = 'Defense: ' + pokemon.stats[1].base_stat;
+    defense.textContent = 'Defense' + pokemon.stats[1].base_stat;
     stats.appendChild(defense);
 
     // Speed
     let speed = document.createElement("p");
-    speed.textContent = 'Speed: ' + pokemon.stats[2].base_stat;
+    speed.textContent = 'Speed' + pokemon.stats[2].base_stat;
     stats.appendChild(speed);
 
     card.appendChild(stats);
@@ -118,6 +118,6 @@ function createCard(pokemon) {
 }
 
 function styleCard(card, color){
-  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
+  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #000000 36%)`;
 }
 
