@@ -15,6 +15,7 @@ const typeColor = {
     psychic: "#a29bfe",
     rock: "#2d3436",
     water: "#0190FF",
+    steel: "#7f8fa6",
   };
   const anzahlPokemon = 120;
   const card = document.getElementById("card");
