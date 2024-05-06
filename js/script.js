@@ -28,6 +28,10 @@ const typeColor = {
         let detailedData = await fetchData(pokemon.url); // Fetch detailed data for each Pokémon
         return detailedData; // Return detailed data instead of basic
     }));
+
+    //sort Pokémon by name
+    allPokemon.sort((a, b) => a.name.localeCompare(b.name));
+    
     allPokemon.forEach(pokemon => {
         createCard(pokemon);
     });
@@ -108,7 +112,7 @@ function createCard(pokemon) {
     //styling the card with radial gradient and type color
     let primaryTypeColor = typeColor[pokemon.types[0].type.name];
     styleCard(card, primaryTypeColor);
-    
+
     document.getElementById("card-container").appendChild(card);  // Ensure 'card' ID exists in your HTML
 }
 
