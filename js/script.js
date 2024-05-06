@@ -104,20 +104,18 @@ function createCard(pokemon) {
     stats.appendChild(speed);
 
     card.appendChild(stats);
-    document.getElementById("card").appendChild(card);  // Ensure 'card' ID exists in your HTML
+
+    //styling the card with radial gradient and type color
+    let primaryTypeColor = typeColor[pokemon.types[0].type.name];
+    styleCard(card, primaryTypeColor);
+    
+    document.getElementById("card-container").appendChild(card);  // Ensure 'card' ID exists in your HTML
 }
 
-
-let appendTypes = (types) => {
-  types.forEach((item) => {
-    let span = document.createElement("SPAN");
-    span.textContent = item.type.name;
-    document.querySelector(".types").appendChild(span);
-  });
-};
-let styleCard = (color) => {
+function styleCard(card, color){
   card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
-  card.querySelectorAll(".types span").forEach((typeColor) => {
-    typeColor.style.backgroundColor = color;
+  card.querySelectorAll(".types span").forEach((typeSpan) => {
+    typeSpan.style.backgroundColor = color;
   });
-};
+}
+

@@ -5,22 +5,22 @@
     font-family: 'karla', sans-serif;
   }
   body {
-    background-color: #eff3ff;
+    background-color: #c3c1c1;
   }
   .container {
-    width: 350px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;;
   }
-  #card {
+  .card {
     position: relative;
-    width: 100%;
+    width: 25%;
     padding: 30px 20px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin: 20px 20px;
+    background-color: #ffffff;
   }
   .pokemonImg {
     display: block;
