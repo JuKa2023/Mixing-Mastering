@@ -31,7 +31,7 @@ const typeColor = {
 
     //sort Pokémon by name
     allPokemon.sort((a, b) => a.name.localeCompare(b.name));
-    
+
     allPokemon.forEach(pokemon => {
         createCard(pokemon);
     });
@@ -61,6 +61,7 @@ function createCard(pokemon) {
 
     // HP
     let hp = document.createElement("p");
+    hp.classList.add('hp');
     hp.textContent = 'HP: ' + pokemon.stats[0].base_stat;
     card.appendChild(hp);
 
@@ -118,8 +119,5 @@ function createCard(pokemon) {
 
 function styleCard(card, color){
   card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
-  card.querySelectorAll(".types span").forEach((typeSpan) => {
-    typeSpan.style.backgroundColor = color;
-  });
 }
 
