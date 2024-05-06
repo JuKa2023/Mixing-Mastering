@@ -101,7 +101,7 @@ function shuffleTiles() {
 shuffleTiles();
 
 
-// Create the reset button that will reload the page when clicked
+// reset button that will reload the page when clicked. to be use after game is over.
 
 const resetButton = document.createElement("button");
 resetButton.innerText = "Reset";
