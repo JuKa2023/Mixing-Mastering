@@ -151,6 +151,8 @@ function createTypeButtons() {
     button.style.borderRadius = '50%';
     button.style.width= '48px';
     button.style.height= '48px';
+    let btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
+    button.setAttribute('title', btnTxthover);
     const icon = document.createElement('img');
     icon.src = 'icons/' + type + '.svg';
     icon.alt = type;
@@ -171,6 +173,8 @@ function createTypeButtons() {
     button.style.borderRadius = '50%';
     button.style.width= '48px';
     button.style.height= '48px';
+    let btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
+    button.setAttribute('title', btnTxthover);
     const icon = document.createElement('img');
     icon.src = 'icons/' + type + '.svg';
     icon.alt = type;
