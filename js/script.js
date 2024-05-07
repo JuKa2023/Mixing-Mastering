@@ -18,7 +18,7 @@ const typeColor = {
   steel: "#7f8fa6",
 };
 
-const anzahlPokemon = 120;
+const anzahlPokemon = 151;
 const searchBox = document.getElementById("search");
 const app = document.getElementById("card-container");
 let allPokemon = [];
@@ -36,7 +36,7 @@ async function init() {
       return detailedData;
   }));
 
-  allPokemon.sort((a, b) => a.name.localeCompare(b.name));
+  // allPokemon.sort((a, b) => a.name.localeCompare(b.name));
   allPokemon.forEach(pokemon => {
       createCard(pokemon);
   });
