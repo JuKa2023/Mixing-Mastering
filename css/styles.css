@@ -22,17 +22,23 @@
   .container {
   width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
   }
+
   .card {
     position: relative;
-    width: calc(25% - 40px);
+    width: calc(25% - 80px);
     padding: 30px 20px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     background-color: #ffffff;
+  }
+  .card:hover {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   }
   .pokemonImg {
     display: block;
