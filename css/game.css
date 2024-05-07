@@ -1,6 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'karla', sans-serif;
+  }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #c3c1c1;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
@@ -12,10 +18,17 @@ body {
 main {
     display: flex;
     padding: 20px;
-    background: radial-gradient(circle, #244def, #f2eea7 65%);
 }
 
 header {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  }
+
+/* header {
     margin: auto;
     display: flexbox;
     justify-items: center;
@@ -23,10 +36,15 @@ header {
     background-color: #f0f0f0;
     padding: 10px 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
+} */
+
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: left;
 }
 
 p {
@@ -39,12 +57,15 @@ p {
     width: 600px;
     height: 600px;
     margin: auto;
-    background-color: lightsteelblue;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.2s ease;
-}
+    background-color: #000000;
+    padding: 0;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+ }
+
 
 #game-board {
     width: 90%;
