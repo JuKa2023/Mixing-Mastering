@@ -7,7 +7,6 @@
 
 body {
     background-color: #c3c1c1;
-    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -75,7 +74,6 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    color: blue;
     justify-items: center;
     align-items: center;
 }
