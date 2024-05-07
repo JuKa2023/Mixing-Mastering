@@ -112,6 +112,15 @@ header{
    margin-bottom: 20px;
 }
 
+/* Styling for typeselection */
+
+.typeselection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 /* Type icons colors and shadows */
 
 
