@@ -147,11 +147,39 @@ function createTypeButtons() {
   leftTypes.forEach(type => {
     const button = createTypeButton(type);
     filteringLeftDiv.appendChild(button);
+    button.textContent = " ";
+    button.style.borderRadius = '50%';
+    button.style.width= '48px';
+    button.style.height= '48px';
+    const icon = document.createElement('img');
+    icon.src = 'icons/' + type + '.svg';
+    icon.alt = type;
+    icon.style.borderRadius = '50%';
+    icon.style.width = '24px';
+    icon.style.height = '24px';
+    icon.classList.add(type);
+    icon.classList.add('icon');
+    console.log(icon.src);
+    button.appendChild(icon);
+    
   });
 
   rightTypes.forEach(type => {
     const button = createTypeButton(type);
     filteringRightDiv.appendChild(button);
+    button.textContent = " ";
+    button.style.borderRadius = '50%';
+    button.style.width= '48px';
+    button.style.height= '48px';
+    const icon = document.createElement('img');
+    icon.src = 'icons/' + type + '.svg';
+    icon.alt = type;
+    icon.style.borderRadius = '50%';
+    icon.style.width = '24px';
+    icon.style.height = '24px';
+    icon.classList.add(type);
+    icon.classList.add('icon');
+    button.appendChild(icon);
   });
 }
 

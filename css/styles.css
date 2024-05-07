@@ -213,3 +213,8 @@ header{
   background: #539DDF;
   box-shadow: 0 0 10px #539DDF;
 }
+
+.icon:hover {
+  transform: scale(1.25);
+  transition: ease-in-out 0.3s;
+}
