@@ -42,10 +42,13 @@
   }
   .card:hover {
     transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    transition: all 0.5s ease-in-out;
     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    
   }
+  
   .pokemonImg {
     display: block;
     width: 180px;
