@@ -68,7 +68,7 @@ async function fetchData(url) {
   }
 }
 
-// Creat card for each pokemon
+// Create card for each pokemon
 
 function createCard(pokemon) {
   let card = document.createElement("div");
@@ -170,3 +170,15 @@ function filterByType(type) {
   // This could set a filter and call a display update function
   console.log('Filtering for type:', type); // Placeholder action
 }
+
+// function to filter by type
+
+function filterByType(type) {
+  const filteredPokemon = allPokemon.filter(pokemon => pokemon.types.some(pokemonType => pokemonType.type.name === type));
+  app.innerHTML = '';
+  filteredPokemon.forEach(pokemon => {
+      createCard(pokemon);
+  });
+}
+
+
