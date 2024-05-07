@@ -210,3 +210,24 @@ function filterByType(type) {
 }
 
 
+// function that rotates the images with the class pokemonImg on x axis to make it pop out on mouseover
+
+document.addEventListener('DOMContentLoaded', function () {
+  init();
+  rotateImage();
+});
+
+function rotateImage() {
+  const pokemonImages = document.querySelectorAll('.pokemonImg');
+  pokemonImages.forEach(image => {
+    image.addEventListener('mouseover', function () {
+      image.style.transform = "rotateX(-50deg)";
+    });
+    image.addEventListener('mouseout', function () {
+      image.style.transform = "rotateX(0deg)";
+    });
+  });
+}
+
+
+

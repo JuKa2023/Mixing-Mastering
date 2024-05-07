@@ -40,8 +40,10 @@
     border-radius: 10px;
     background-color: #ffffff;
   }
+
   .card:hover {
-    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    /* transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0); */
+    translate3d : (22px, -50%, -5em);
     transition: all 0.5s ease-in-out;
     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
@@ -57,9 +59,6 @@
     margin: 20px auto;
   }
 
-  .pokemonImg:hover {
-    transform: perspective(900px) translateY(-5%) rotateX(-25deg) translateZ(0);
-  }
 
 
 
