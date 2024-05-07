@@ -57,6 +57,10 @@
     margin: 20px auto;
   }
 
+  .pokemonImg:hover {
+    transform: perspective(900px) translateY(-5%) rotateX(-25deg) translateZ(0);
+  }
+
 
 
   .hp {
@@ -141,7 +145,7 @@ header{
 }
 
 .dragon {
-  background: #0C69C8;
+  background: rgb(255, 234, 167)
   box-shadow: 0 0 10px #0C69C8;
 }
 
