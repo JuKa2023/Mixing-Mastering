@@ -68,6 +68,8 @@ async function fetchData(url) {
   }
 }
 
+// Creat card for each pokemon
+
 function createCard(pokemon) {
   let card = document.createElement("div");
   card.className = 'card';
@@ -123,4 +125,48 @@ function createCard(pokemon) {
 
 function styleCard(card, color) {
   card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #000000 36%)`;
+}
+
+// function to creat buttons/Checkboxes at top of the page
+
+document.addEventListener('DOMContentLoaded', function () {
+  init();
+  createTypeButtons();
+});
+
+function createTypeButtons() {
+  const types = Object.keys(typeColor); // Get all the types from your typeColor object
+  const halfIndex = Math.ceil(types.length / 2); // To divide types approximately equally
+
+  const leftTypes = types.slice(0, halfIndex); // First half for filteringLeft
+  const rightTypes = types.slice(halfIndex); // Second half for filteringRight
+
+  const filteringLeftDiv = document.getElementById('filteringLeft');
+  const filteringRightDiv = document.getElementById('filteringRight');
+
+  leftTypes.forEach(type => {
+    const button = createTypeButton(type);
+    filteringLeftDiv.appendChild(button);
+  });
+
+  rightTypes.forEach(type => {
+    const button = createTypeButton(type);
+    filteringRightDiv.appendChild(button);
+  });
+}
+
+function createTypeButton(type) {
+  const button = document.createElement('button');
+  button.textContent = capitalizeFirstLetter(type);
+  button.style.backgroundColor = typeColor[type];
+  button.className = 'type-button'; // Add this class for potential styling via CSS
+  button.onclick = function() { filterByType(type); }; // Assuming you have or will implement this function
+
+  return button;
+}
+
+function filterByType(type) {
+  // You can implement filtering logic here
+  // This could set a filter and call a display update function
+  console.log('Filtering for type:', type); // Placeholder action
 }

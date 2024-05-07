@@ -7,13 +7,19 @@
   body {
     background-color: #c3c1c1;
   }
+
+.flexObject{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 #search{
  padding: 10px 20px;
   border-radius: 30px;
   border: none;
   outline: none;
-  width: 100%;
-  margin: 20px 0;
+  margin: 20px 20px;
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
