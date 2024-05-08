@@ -134,18 +134,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function createTypeButtons() {
-  const types = Object.keys(typeColor); // Get all the types from your typeColor object
-  const halfIndex = Math.ceil(types.length / 2); // To divide types approximately equally
+  const types = Object.keys(typeColor); // Get all the types from 
 
-  const leftTypes = types.slice(0, halfIndex); // First half for filteringLeft
-  const rightTypes = types.slice(halfIndex); // Second half for filteringRight
-
-  const filteringLeftDiv = document.getElementById('filteringLeft');
-  const filteringRightDiv = document.getElementById('filteringRight');
-
-  leftTypes.forEach(type => {
+  types.forEach(type => {
     const button = createTypeButton(type);
-    filteringLeftDiv.appendChild(button);
+    typeselection.appendChild(button);
     button.textContent = " ";
     button.style.cursor = 'pointer';
     button.style.borderRadius = '50%';
@@ -166,26 +159,6 @@ function createTypeButtons() {
     
   });
 
-  rightTypes.forEach(type => {
-    const button = createTypeButton(type);
-    filteringRightDiv.appendChild(button);
-    button.textContent = " ";
-    button.style.cursor = 'pointer';
-    button.style.borderRadius = '50%';
-    button.style.width= '48px';
-    button.style.height= '48px';
-    let btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
-    button.setAttribute('title', btnTxthover);
-    const icon = document.createElement('img');
-    icon.src = 'icons/' + type + '.svg';
-    icon.alt = type;
-    icon.style.borderRadius = '50%';
-    icon.style.width = '24px';
-    icon.style.height = '24px';
-    icon.classList.add(type);
-    icon.classList.add('icon');
-    button.appendChild(icon);
-  });
 }
 
 function createTypeButton(type) {
@@ -213,12 +186,6 @@ function filterByType(type) {
       createCard(pokemon);
   });
 }
-
-// function to show burger menu
-document.getElementById('burger-menu').addEventListener('click', function() {
-  let sideMenu = document.querySelector('.typeselection');
-  sideMenu.classList.toggle('active');
-});
 
 
 

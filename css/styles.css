@@ -10,6 +10,7 @@
 
 .flexObject{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
@@ -84,8 +85,8 @@
     font-size: 12px;
     letter-spacing: 0.4px;
     font-weight: 600;
-    margin: 5px;
   }
+
   .types span {
     padding: 5px 20px;
     border-radius: 20px;
@@ -133,6 +134,7 @@ header{
   padding: 0;
   margin-bottom: 20px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
 }
 
 .navigation {
@@ -258,13 +260,6 @@ header{
   transition: ease-in-out 0.3s;
 }
 
-/* Burger Menu Icon for Mobile Devices */
-#burger-menu {
-  display: none; /* Hide by default */
-  font-size: 30px;
-  cursor: pointer;
-}
-
 @media(min-width: 769px) and (max-width: 1024px){
   .flexObject{
     display: flex;
@@ -282,31 +277,6 @@ header{
     padding: 30px 20px;
     border-radius: 10px;
   }
-    /* Display the burger menu icon and adjust navigation layout */
-    #burger-menu {
-      display: block;
-      padding: 0;  }
-  
-    .typeselection {
-      position: fixed;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 40px;
-      height: 100%;
-      left: -250px; /* Start off-screen */
-      top: 0;
-      background-color: #111;
-      overflow-y: auto; /* Enable scroll on Y-axis if needed */
-      transition: 0.3s; /* Smooth slide in effect */
-      z-index: 1000; /* Ensure it's above other content */
-    }
-  
-    /* When side menu is active, change left value to 0 */
-    .typeselection.active {
-      left: 0;
-    }
 }
 
 
@@ -333,31 +303,6 @@ header{
     padding: 30px 20px;
     border-radius: 10px;
   }
-  /* Display the burger menu icon and adjust navigation layout */
-  #burger-menu {
-    display: block;
-    padding: 0;  }
-
-  .typeselection {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40px;
-    height: 100%;
-    left: -250px; /* Start off-screen */
-    top: 0;
-    background-color: #111;
-    overflow-y: auto; /* Enable scroll on Y-axis if needed */
-    transition: 0.3s; /* Smooth slide in effect */
-    z-index: 1000; /* Ensure it's above other content */
-  }
-
-  /* When side menu is active, change left value to 0 */
-  .typeselection.active {
-    left: 0;
-  }
 }
 
 
@@ -372,30 +317,5 @@ header{
     padding: 30px 20px;
     border-radius: 10px;
   }
-    /* Display the burger menu icon and adjust navigation layout */
-    #burger-menu {
-      display: block;
-      padding: 0;  }
-  
-    .typeselection {
-      position: fixed;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 40px;
-      height: 100%;
-      left: -250px; /* Start off-screen */
-      top: 0;
-      background-color: #111;
-      overflow-y: auto; /* Enable scroll on Y-axis if needed */
-      transition: 0.3s; /* Smooth slide in effect */
-      z-index: 1000; /* Ensure it's above other content */
-    }
-  
-    /* When side menu is active, change left value to 0 */
-    .typeselection.active {
-      left: 0;
-    }
 }
 
