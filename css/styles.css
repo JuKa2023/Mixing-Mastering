@@ -278,10 +278,12 @@ header{
   }
   .container{
     gap: 30px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
   .card {
     position: relative;
-    width: calc(33.3% - 60px);
+    width: calc(33% - 60px);
     padding: 30px 20px;
     border-radius: 10px;
   }
@@ -304,6 +306,8 @@ header{
   }
   .container{
     gap: 20px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
   .card {
     position: relative;
@@ -318,6 +322,8 @@ header{
 @media (max-width: 480px) {
   .container{
     gap: 20px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
   .card {
     position: relative;
