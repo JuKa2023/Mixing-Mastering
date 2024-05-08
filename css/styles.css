@@ -158,93 +158,93 @@ header{
 
 
 .bug {
-  background: #92BC2C;
-  box-shadow: 0 0 10px #92BC2C;
+  background: #26de81;
+  box-shadow: 0 0 10px #26de81;
 }
 
 .dark {
   background: #595761;
   box-shadow: 0 0 10px #595761;
-}
+} /*color of backgroudn for proof to che*/
 
 .dragon {
   background: rgb(255, 234, 167);
-  box-shadow: 0 0 10px #0C69C8;
+  box-shadow: 0 0 10px #ffeaa7;
 }
 
 .electric {
-  background: #F2D94E;
-  box-shadow: 0 0 10px #F2D94E;
+  background: #fed330;
+  box-shadow: 0 0 10px #fed330;
 }
 
 .fire {
-  background: #FBA54C;
-  box-shadow: 0 0 10px #FBA54C;
+  background: #f0932b;
+  box-shadow: 0 0 10px #f0932b;
 }
 
 .fairy {
-  background: #EE90E6;
-  box-shadow: 0 0 10px #EE90E6;
+  background: #FF0069;
+  box-shadow: 0 0 10px #FF0069;
 }
 
 .fighting {
-  background: #D3425F;
-  box-shadow: 0 0 10px #D3425F;
+  background: #30336b;
+  box-shadow: 0 0 10px #30336b;
 }
 
 .flying {
-  background: #A1BBEC;
-  box-shadow: 0 0 10px #A1BBEC;
+  background: #81ecec;
+  box-shadow: 0 0 10px #81ecec;
 }
 
 .ghost {
-  background: #5F6DBC;
-  box-shadow: 0 0 10px #5F6DBC;
+  background: #a55eea;
+  box-shadow: 0 0 10px #a55eea;
 }
 
 .grass {
-  background: #5FBD58;
-  box-shadow: 0 0 10px #5FBD58;
+  background: #00b894;
+  box-shadow: 0 0 10px #00b894;
 }
 
 .ground {
-  background: #DA7C4D;
-  box-shadow: 0 0 10px #DA7C4D;
+  background: #EFB549;
+  box-shadow: 0 0 10px #EFB549;
 }
 
 .ice {
-  background: #75D0C1;
-  box-shadow: 0 0 10px #75D0C1;
+  background: #74b9ff;
+  box-shadow: 0 0 10px #74b9ff;
 }
 
 .normal {
-  background: #A0A29F;
-  box-shadow: 0 0 10px #A0A29F;
+  background: #95afc0;
+  box-shadow: 0 0 10px #95afc0;
 }
 
 .poison {
-  background: #B763CF;
-  box-shadow: 0 0 10px #B763CF;
+  background: #6c5ce7;
+  box-shadow: 0 0 10px #6c5ce7;
 }
 
 .psychic {
-  background: #FA8581;
-  box-shadow: 0 0 10px #FA8581;
+  background: #a29bfe;
+  box-shadow: 0 0 10px #a29bfe;
 }
 
 .rock {
-  background: #C9BB8A;
-  box-shadow: 0 0 10px #C9BB8A;
+  background: #2d3436;
+  box-shadow: 0 0 10px #2d3436;
 }
 
 .steel {
-  background: #5695A3;
-  box-shadow: 0 0 10px #5695A3;
+  background: #7f8fa6;
+  box-shadow: 0 0 10px #7f8fa6;
 }
 
 .water {
-  background: #539DDF;
-  box-shadow: 0 0 10px #539DDF;
+  background: #0190FF;
+  box-shadow: 0 0 10px #0190FF;
 }
 
 .icon:hover {
