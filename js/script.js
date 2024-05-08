@@ -214,6 +214,11 @@ function filterByType(type) {
   });
 }
 
+// function to show burger menu
+document.getElementById('burger-menu').addEventListener('click', function() {
+  var sideMenu = document.querySelector('.typeselection');
+  sideMenu.classList.toggle('active');
+});
 
 
 
