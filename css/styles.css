@@ -99,7 +99,32 @@
     text-align: center;
   }
   .stats p {
+    position: relative;
     color: #ffffff;
+    font-size: 18px; /* Adjust size for the stat value */
+    margin-bottom: 10px; /* Adds space between stat entries */  }
+
+  .statLabel{
+    display: block; /* Ensures the label appears on its own line */
+    font-size: 12px; /* Smaller font size for the label */
+    color: #ccc; /* Lighter color for the label if needed */
+    position: absolute;
+    top: -20px; /* Positions it above the value */
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centers the label */
+  }
+
+  .hpLabel{
+    font-size: 14px;
+    font-weight: 600;
+    color: #010101;
+  }
+
+  .statValue {
+    display: block; /* Makes the stat value appear on a new line below the label */
+    font-size: 16px; /* Explicit size for the value */
+    color: #fff; /* Color of the value */
   }
 
   /* styling of the header and navbar */
@@ -143,7 +168,7 @@ header{
 }
 
 .dragon {
-  background: rgb(255, 234, 167)
+  background: rgb(255, 234, 167);
   box-shadow: 0 0 10px #0C69C8;
 }
 

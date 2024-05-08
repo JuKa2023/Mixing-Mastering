@@ -76,7 +76,7 @@ function createCard(pokemon) {
 
   let hp = document.createElement("p");
   hp.classList.add('hp');
-  hp.textContent = 'HP ' + pokemon.stats[0].base_stat;
+  hp.innerHTML = '<span class="hpLabel ">HP</span> ' + pokemon.stats[0].base_stat;
   card.appendChild(hp);
 
   let pokemonImage = document.createElement("img");
@@ -104,15 +104,14 @@ function createCard(pokemon) {
   stats.className = 'stats';
 
   let attack = document.createElement("p");
-  attack.textContent = 'Attack ' + pokemon.stats[0].base_stat;
+  attack.innerHTML = '<span class="statLabel">Attack</span><span class="statValue">' + pokemon.stats[1].base_stat + '</span>';
   stats.appendChild(attack);
 
   let defense = document.createElement("p");
-  defense.textContent = 'Defense ' + pokemon.stats[1].base_stat;
+  defense.innerHTML = '<span class="statLabel">Defense</span><span class="statValue">' + pokemon.stats[2].base_stat + '</span>';
   stats.appendChild(defense);
-
   let speed = document.createElement("p");
-  speed.textContent = 'Speed ' + pokemon.stats[2].base_stat;
+  speed.innerHTML = '<span class="statLabel">Speed</span><span class="statValue">' + pokemon.stats[5].base_stat + '</span>';
   stats.appendChild(speed);
 
   card.appendChild(stats);
