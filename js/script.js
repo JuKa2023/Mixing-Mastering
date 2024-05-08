@@ -170,6 +170,7 @@ function createTypeButtons() {
     const button = createTypeButton(type);
     filteringRightDiv.appendChild(button);
     button.textContent = " ";
+    button.style.cursor = 'pointer';
     button.style.borderRadius = '50%';
     button.style.width= '48px';
     button.style.height= '48px';
