@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: 20px;
 }
 #search{
  padding: 10px 20px;
@@ -262,8 +262,40 @@ header{
   cursor: pointer;
 }
 
+@media(min-width: 769px) and (max-width: 1024px){
+  .flexObject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .container{
+    gap: 30px;
+  }
+  .card {
+    position: relative;
+    width: calc(33.3% - 60px);
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+}
+
+
+
 /*Mediaquery for Ipad*/
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  #search{
+    margin: 0;
+  }
+
+  .flexObject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
   .container{
     gap: 20px;
   }
@@ -276,8 +308,7 @@ header{
   /* Display the burger menu icon and adjust navigation layout */
   #burger-menu {
     display: block;
-    padding: 20px 20px;
-  }
+    padding: 0;  }
 
   .typeselection {
     position: fixed;
