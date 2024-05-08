@@ -138,6 +138,7 @@ function createTypeButtons() {
 
   types.forEach(type => {
     const button = createTypeButton(type);
+    const typeselection = document.getElementById('types');
     typeselection.appendChild(button);
     button.textContent = " ";
     button.style.cursor = 'pointer';
