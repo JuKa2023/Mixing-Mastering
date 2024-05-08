@@ -51,7 +51,7 @@
 
   .pokemonImg {
     display: block;
-    width: 180px;
+    width: 50%;
     max-height: 200px;
     position: relative;
     margin: 20px auto;
@@ -75,13 +75,16 @@
   .types {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 20px 0 40px 0;
+    width: 100%;
   }
   .hp span,
   .types span {
     font-size: 12px;
     letter-spacing: 0.4px;
     font-weight: 600;
+    margin: 5px;
   }
   .types span {
     padding: 5px 20px;
