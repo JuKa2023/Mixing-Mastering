@@ -29,6 +29,7 @@
     border-radius: 10px;
 }
 
+
 #canvas1 {
     border: 2px solid white;
     width: 500px;
@@ -44,6 +45,48 @@
 }
 
 #canvas3 {
+  border: 2px solid white;
+  width: 500px;
+  height: 507px;
+  
+}
+
+#canvas4 {
+  border: 2px solid white;
+  width: 500px;
+  height: 507px;
+  
+}
+
+#canvas5 {
+  border: 2px solid white;
+  width: 500px;
+  height: 507px;
+  
+}
+
+#canvas6 {
+  border: 2px solid white;
+  width: 500px;
+  height: 507px;
+  
+}
+
+#canvas7 {
+  border: 2px solid white;
+  width: 500px;
+  height: 507px;
+  
+}
+
+#canvas8 {
+  border: 2px solid white;
+  width: 500px;
+  height: 507px;
+  
+}
+
+#canvas9 {
   border: 2px solid white;
   width: 500px;
   height: 507px;
