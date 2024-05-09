@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background: black;
+    font-family: 'karla', sans-serif;
 }
 
 #canvas1 {
@@ -15,3 +16,8 @@
     height: 507px;
     
 }
+
+
+body {
+    background-color: #c3c1c1;
+  }
