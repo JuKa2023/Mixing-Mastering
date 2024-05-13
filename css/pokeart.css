@@ -8,7 +8,7 @@
 
 .artwork {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     background-color: #000000;
     justify-items: center;
@@ -20,7 +20,7 @@
 
 .artwork .col {
     display: flex;
-    width: 32%;
+    width: 45%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -32,68 +32,69 @@
 
 #canvas1 {
     border: 2px solid white;
-    width: 500px;
-    height: 507px;
+    width: auto;
+    height: auto;
     
 }
 
 #canvas2 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas3 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas4 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas5 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas6 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas7 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas8 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 #canvas9 {
   border: 2px solid white;
-  width: 500px;
-  height: 507px;
+  width: auto;
+  height: auto;
   
 }
 
 body {
+  width: 100%;
     background-color: #c3c1c1;
   }
 
