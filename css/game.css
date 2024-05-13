@@ -16,13 +16,15 @@ body {
 }
 main {
     display: flex;
-    padding: 20px;
 }
 
 header {
     color: #ffffff;
     background-color: #000000;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
   }
@@ -132,8 +134,8 @@ p {
 
 @media screen and (min-width: 768px) {
     #game {
-        width: 800px;
-        height: 800px;
+        width: 768px;
+        height: 768px;
     }
 
     #game-board {
@@ -162,7 +164,7 @@ p {
 
 
 
-/* media queries for larger screens*/
+/* media queries for larger screens
 
 @media screen and (min-width: 1440px) {
     #game {
@@ -193,6 +195,6 @@ p {
         height: 200px;
     }
     
-}
+} */
 
 

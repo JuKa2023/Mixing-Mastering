@@ -7,93 +7,37 @@
 }
 
 .artwork {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    display: flex;
     background-color: #000000;
-    justify-items: center;
+    justify-content: center;
+    align-content: center;
     padding: 2%;
     margin: 5%;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
-.artwork .col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #000000;
-    border-radius: 10px;
-}
-
 
 #canvas1 {
     border: 2px solid white;
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 507px;
     
 }
 
-#canvas2 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
+#playAgain {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+} 
 
-#canvas3 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
-
-#canvas4 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
-
-#canvas5 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
-
-#canvas6 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
-
-#canvas7 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
-
-#canvas8 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
-
-#canvas9 {
-  border: 2px solid white;
-  width: auto;
-  height: auto;
-  
-}
 
 body {
-  width: 100%;
     background-color: #c3c1c1;
   }
 

@@ -233,12 +233,37 @@ tiles.forEach((tile) => {
 
 // A function that checks if all the tiles have the class matched. If they do, game over, you win.
 
+// function checkWin() {
+//   const matchedTiles = document.querySelectorAll(".matched");
+//   if (matchedTiles.length === 16) {
+//     alert("You win!");
+//   }
+// }
+
+//function to delay win message by 2 seconds
+// function checkWin() {
+//   const matchedTiles = document.querySelectorAll(".matched");
+//   if (matchedTiles.length === 16) {
+//     setTimeout(() => {
+//       alert("You win!");
+//     }, 2000);
+//   }
+// }
+
+// A funcntion that checks if all the tiles have the class matched, and after a delay of 1 second, an alert will pop up saying "You win!"
+//and on clicking the OK button, the pokeart page will be loaded.
+
 function checkWin() {
   const matchedTiles = document.querySelectorAll(".matched");
   if (matchedTiles.length === 16) {
-    alert("You win!");
+    setTimeout(() => {
+      alert("You win!");
+      window.location.href = "pokeart.html";
+    }, 1000);
   }
 }
+
+
 
 // Call the checkWin function every time 2 tiles are flipped
 
