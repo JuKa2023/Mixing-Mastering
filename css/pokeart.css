@@ -12,7 +12,10 @@
     justify-content: center;
     align-content: center;
     padding: 2%;
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
@@ -39,6 +42,16 @@
     height: auto;
 }
 
+.logo {
+    display: grid;
+    justify-content: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-top: 20px;
+}   
+
 a:link {
     color: white;
     text-decoration: none;
@@ -64,9 +77,8 @@ header{
   
   .navigation {
     display: flex;
-    justify-content:center;
+    justify-content: space-around;
     gap: 50px;
-    align-items: center;
     padding: 20px 20px;
     background-color: #000000;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);

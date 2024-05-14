@@ -29,6 +29,29 @@ header {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
   }
 
+  .navigation {
+    display: flex;
+    padding: 20px 20px;
+    background-color: #000000;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+  }
+
+  .navigation a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .logo {
+    display: grid;
+    justify-content: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
 /* header {
     margin: auto;
     display: flexbox;
