@@ -138,12 +138,23 @@ header{
   z-index: 2000;
 }
 
+.headerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.headerGrid .col {
+  display: flex;
+  align-items: center;
+}
+
 .navigation {
   display: flex;
-  padding: 20px 20px;
+  justify-content: left;
   background-color: #000000;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
 }
 
 .navigation a{
@@ -162,14 +173,14 @@ a:visited {
   color: white;
 }
 
-.logo {
-  display: grid;
-  justify-content: center;
+.headerGrid .logo {
+  display: flex;
+  justify-content: space-around;
 }
+
 
 .logo img {
   width: 200px;
-  margin-top: 20px;
 }
 
 /* Styling for typeselection */
