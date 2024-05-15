@@ -75,7 +75,6 @@ header {
   .headerGrid .col {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     justify-items: center;
   }
   
@@ -105,4 +104,9 @@ header {
   
   .logo img {
     width: 200px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-around;
   }
