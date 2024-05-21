@@ -1,3 +1,12 @@
+const loaderContainer = document.querySelector('.loader-container');
+const pageContent = document.querySelector('#page-content');
+
+window.addEventListener('load', () => {
+  loaderContainer.classList.add('hidden');
+  pageContent.classList.add('visible');
+});
+
+
 const typeColor = {
   bug: "#26de81",
   dragon: "#ffeaa7",
@@ -51,6 +60,7 @@ async function suchePokemon(searchInput) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  pageContent.classList.add('visible');
   init();
 });
 
@@ -187,6 +197,8 @@ function filterByType(type) {
       createCard(pokemon);
   });
 }
+
+
 
 
 

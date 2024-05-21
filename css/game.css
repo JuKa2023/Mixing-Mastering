@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -18,21 +19,17 @@ main {
     display: flex;
 }
 
-header {
-    color: #ffffff;
-    background-color: #000000;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+header{
+    padding: 0;
+    margin-bottom: 20px;
+    z-index: 2000;
   }
-
+  
   .headerGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    padding: 10px 20px;
   }
   
   .headerGrid .col {
@@ -42,46 +39,72 @@ header {
   
   .navigation {
     display: flex;
-    justify-content: left;
-    background-color: #000000;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    justify-content: space-around;
+    grid-column: 3/4;
+    grid-row: 1/1;
+    justify-content: right;
   }
   
-  .navigation a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
-  a:link {
+.reset-button {
+    display: flex;
+    background-color: black;
     color: white;
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 10px;
+}
+
+  .btn, .reset-button {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover, .btn:active .btn:focus a:visited .btn:link a:visited:hover, .reset-button:hover, .reset-button:active .reset-button:focus .reset-button:link .reset-button:visited:hover {
+    background-color: #FFCC00;
+    color: white;
+    border-color: #0075BE;
+    transform: scale(1.05);
+  }
+  
+  
+  
+  .navigation a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .btn:link {
     text-decoration: none;
     
   }
   
   a:visited {
+    text-decoration: none;
     color: white;
+  }
+  a:visited:hover {
+    text-decoration: none;
+    color: black;
   }
   
   .headerGrid .logo {
     display: flex;
     justify-content: space-around;
+    grid-column: 2/3;
   }
   
   
   .logo img {
     width: 200px;
   }
-
-/* header {
-    margin: auto;
-    display: flexbox;
-    justify-items: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-} */
+  
+  .logo img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
 
 
 h1 {
@@ -160,8 +183,6 @@ p {
     border: none;
 }
 
-
-
 .cardBack {
     width:100px;
     height: 100px;
@@ -178,31 +199,31 @@ p {
 
 @media screen and (min-width: 768px) {
     #game {
-        width: 768px;
-        height: 768px;
+        width: 700px;
+        height: auto;
     }
 
     #game-board {
         width: 95%;
         height: 95%;
         margin: auto;
-        padding: 5%;
-        gap: 1%;
+        padding: 8%;
+        gap: 2%;
     }
 
     .tiles {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .cardBack {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .tiles img {
-        width:150px;
-        height: 150px;
+        width:125px;
+        height: 125px;
     }
 }
 

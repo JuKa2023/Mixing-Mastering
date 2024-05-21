@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
     margin: 0;
@@ -55,58 +57,95 @@ main {
     height: auto;
 }
 
-header {
-    color: #ffffff;
-    background-color: #000000;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  }
+header{
+  padding: 0;
+  margin-bottom: 20px;
+  z-index: 2000;
+}
 
-  .headerGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-  }
-  
-  .headerGrid .col {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: left;
-    background-color: #000000;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  }
-  
-  .navigation a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
-  a:link {
-    color: white;
-    text-decoration: none;
-    
-  }
-  
-  a:visited {
-    color: white;
-  }
- 
-  
-  .logo img {
-    width: 200px;
-  }
+.headerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px 20px;
+}
 
-  .logo {
-    display: flex;
-    justify-content: space-around;
-  }
+.headerGrid .col {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 3/4;
+  grid-row: 1/1;
+  justify-content: right;
+}
+
+.playAgain {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.btn, .playAgain {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover, .btn:active .btn:focus a:visited .btn:link a:visited:hover, .playAgain:hover, .playAgain:active .playAgain:focus .playAgain:link .playAgain:visited:hover {
+  background-color: #FFCC00;
+  color: white;
+  border-color: #0075BE;
+  transform: scale(1.05);
+}
+
+
+
+.navigation a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn:link {
+  text-decoration: none;
+  
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:visited:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.headerGrid .logo {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 2/3;
+}
+
+
+.logo img {
+  width: 200px;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}

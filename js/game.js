@@ -107,17 +107,17 @@ const resetButton = document.createElement("button");
 resetButton.innerText = "Reset";
 resetButton.classList.add("reset-button");
 document.body.appendChild(resetButton);
-resetButton.style.display = "block";
-resetButton.style.margin = "auto";
-resetButton.style.marginTop = "20px";
-resetButton.style.padding = "10px";
-resetButton.style.fontSize = "20px";
-resetButton.style.backgroundColor = "black";
-resetButton.style.color = "white";
-resetButton.style.border = "none";
-resetButton.style.borderRadius = "5px";
-resetButton.style.cursor = "pointer";
-resetButton.style.outline = "none";
+// resetButton.style.display = "block";
+// resetButton.style.margin = "auto";
+// resetButton.style.marginTop = "20px";
+// resetButton.style.padding = "10px";
+// resetButton.style.fontSize = "20px";
+// resetButton.style.backgroundColor = "black";
+// resetButton.style.color = "white";
+// resetButton.style.border = "none";
+// resetButton.style.borderRadius = "5px";
+// resetButton.style.cursor = "pointer";
+// resetButton.style.outline = "none";
 
 
 resetButton.addEventListener("click", () => {
