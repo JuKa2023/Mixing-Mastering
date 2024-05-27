@@ -51,7 +51,7 @@
   background: radial-gradient(circle at 50% 0%, rgb(162, 155, 254) 36%, rgb(0, 0, 0) 36%);
 }
 
-.hoverText {
+#hoverText1, #hoverText2, #hoverText3{
   display: none;
   position: absolute;
   top: 0;
@@ -63,15 +63,21 @@
   padding: 20px;
   border-radius: 10px;
   box-sizing: border-box;
+  z-index: 0;
 }
 
-.card:hover .hoverText {
+ #hoverText1:hover, #hoverText2:hover, #hoverText3:hover{
+    z-index: 1;
   display: block;
 }
 
-.cardContent {
-  position: relative;
+#cardContent1, #cardContent2, #cardContent3 {
   z-index: 1;
+}
+
+#cardContent1:hover, #cardContent2:hover, #cardContent3:hover {
+    z-index: 0;
+    display: none;
 }
 
 .hp {
