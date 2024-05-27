@@ -68,6 +68,7 @@ header{
     padding: 10px 20px;
     transition: background-color 0.2s ease-in-out;
     color: white;
+    font-size: 1.2rem;
   }
   
   button:hover, button:active, button:focus, button:visited {
@@ -76,9 +77,7 @@ header{
     border-color: #0075BE;
     transform: scale(1.05);
   }
-  button {
-    font-size: 1.2rem;
-  }
+
   #search:hover, #search:active, #search:focus {
     background-color: #FFCC00;
     color: black;
