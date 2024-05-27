@@ -242,6 +242,10 @@ header{
   text-decoration: none;
 }
 
+#team {
+  margin-right: 20px;
+}
+
 /* Styling for the logo */
 
 .headerGrid .logo {

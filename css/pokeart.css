@@ -113,7 +113,9 @@ a {
   transform: scale(1.05);
 }
 
-
+#team {
+  margin-right: 20px;
+}
 
 .navigation a {
   text-decoration: none;
