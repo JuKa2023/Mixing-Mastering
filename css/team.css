@@ -17,9 +17,6 @@
   /* margin-top: 60px; */
 }
 
-.breiteMain {
-  /* Add your desired styles for breiteMain */
-}
 
 .flexObject {
   display: flex;
@@ -28,7 +25,7 @@
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .card {
@@ -37,6 +34,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    
 }
 
 #card1 {
@@ -51,32 +57,29 @@
   background: radial-gradient(circle at 50% 0%, rgb(162, 155, 254) 36%, rgb(0, 0, 0) 36%);
 }
 
-#hoverText1, #hoverText2, #hoverText3{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  z-index: 0;
+ #card1:hover, #card2:hover, #card3:hover{
+    transition: background 0.5s ease;
+    background: black;
+    color: white;
 }
 
- #hoverText1:hover, #hoverText2:hover, #hoverText3:hover{
+.card .hoverText {
+    transform: translate(0, -100px);
+  display: none;
+}
+
+ .card:hover .hoverText{
+    transform: translate(0, 0);
     z-index: 1;
   display: block;
 }
 
-#cardContent1, #cardContent2, #cardContent3 {
+.card.cardContent {
   z-index: 1;
 }
 
-#cardContent1:hover, #cardContent2:hover, #cardContent3:hover {
-    z-index: 0;
+.card:hover .cardContent{
+    transform: translate3d(0, 100%, 0);
     display: none;
 }
 
