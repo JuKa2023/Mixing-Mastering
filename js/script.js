@@ -1,11 +1,11 @@
 const loaderContainer = document.querySelector('.loader-container');
 const pageContent = document.querySelector('#page-content');
+const resetButton = document.getElementById('reset-button'); // Reference to reset button
 
 window.addEventListener('load', () => {
   loaderContainer.classList.add('hidden');
   pageContent.classList.add('visible');
 });
-
 
 const typeColor = {
   bug: "#26de81",
@@ -167,9 +167,7 @@ function createTypeButtons() {
     icon.classList.add('icon');
     console.log(icon.src);
     button.appendChild(icon);
-    
   });
-
 }
 
 function createTypeButton(type) {
@@ -177,18 +175,10 @@ function createTypeButton(type) {
   button.textContent = capitalizeFirstLetter(type);
   button.style.backgroundColor = typeColor[type];
   button.className = 'type-button'; // Add this class for potential styling via CSS
-  button.onclick = function() { filterByType(type); }; // Assuming you have or will implement this function
+  button.onclick = function() { filterByType(type); };
 
   return button;
 }
-
-function filterByType(type) {
-  // You can implement filtering logic here
-  // This could set a filter and call a display update function
-  console.log('Filtering for type:', type); // Placeholder action
-}
-
-// function to filter by type
 
 function filterByType(type) {
   const filteredPokemon = allPokemon.filter(pokemon => pokemon.types.some(pokemonType => pokemonType.type.name === type));
@@ -198,8 +188,13 @@ function filterByType(type) {
   });
 }
 
+// Function to reset filters and show all Pokémon
+function resetFilters() {
+  searchBox.value = ''; // Clear the search box
+  app.innerHTML = ''; // Clear the current cards
+  allPokemon.forEach(pokemon => {
+    createCard(pokemon); // Create cards for all Pokémon
+  });
+}
 
-
-
-
-
+resetButton.addEventListener('click', resetFilters); // Attach event listener to the reset button
