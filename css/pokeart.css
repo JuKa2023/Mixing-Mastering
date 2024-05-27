@@ -107,9 +107,10 @@ a {
   color: white;
 }
 
-.btn:hover, .btn:active .btn:focus a:visited .btn:link a:visited:hover, .playAgain:hover, .playAgain:active .playAgain:focus .playAgain:link .playAgain:visited:hover {
+
+  button:hover, button:active, button:focus, button:visited {
   background-color: #FFCC00;
-  color: white;
+  color: black;
   border-color: #0075BE;
   transform: scale(1.05);
 }

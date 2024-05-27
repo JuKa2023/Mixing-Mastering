@@ -63,25 +63,18 @@
     color: white;
 }
 
-.card .hoverText {
-    transform: translate(0, -100px);
-  display: none;
-}
-
- .card:hover .hoverText{
-    transform: translate(0, 0);
-    z-index: 1;
-  display: block;
-}
-
-.card.cardContent {
-  z-index: 1;
-}
-
-.card:hover .cardContent{
-    transform: translate3d(0, 100%, 0);
+#card1 .hoverText, #card2 .hoverText, #card3 .hoverText, #card1:hover .cardContent, #card2:hover .cardContent, #card3:hover .cardContent {
+    transform: scale(4);
     display: none;
 }
+
+ #card1:hover .hoverText, #card2:hover .hoverText, #card3:hover .hoverText, #card1 .cardContent, #card2 .cardContent, #card3 .cardContent{
+  transition: transform, 3s, ease;
+    transform: scale(1);
+    z-index: 1;
+    display: block;
+}
+
 
 .hp {
   font-size: 1.2em;
@@ -134,7 +127,8 @@
 
   .card {
     position: relative;
-    width: calc(25% - 80px);
+    width: 25%;
+    height: 40vh;
     padding: 30px 20px;
     border-radius: 10px;
   }
@@ -265,21 +259,16 @@ header{
   color: white;
 }
 
-.btn:hover, .btn:active, .btn:focus, a:visited, .btn:link, a:visited:hover, a:focus, a:active {
+button:hover, button:active, button:focus, button:visited {
   background-color: #FFCC00;
   color: black;
   border-color: #0075BE;
   transform: scale(1.05);
 }
 
-#search:hover, #search:active, #search:focus {
-  background-color: #FFCC00;
-  color: black;
-  border-color: #0075BE;
-  transform: scale(1.05);
+button {
+  font-size: 1.2rem;
 }
-
-
 
 .navigation a {
   text-decoration: none;
