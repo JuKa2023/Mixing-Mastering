@@ -17,22 +17,103 @@
   /* margin-top: 60px; */
 }
 
+.breiteMain {
+  /* Add your desired styles for breiteMain */
+}
+
+.flexObject {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#card1 {
+  background: radial-gradient(circle at 50% 0%, rgb(240, 147, 43) 36%, rgb(0, 0, 0) 36%);
+}
+
+#card2 {
+  background: radial-gradient(circle at 50% 0%, rgb(255, 234, 167) 36%, rgb(0, 0, 0) 36%);
+}
+
+#card3 {
+  background: radial-gradient(circle at 50% 0%, rgb(162, 155, 254) 36%, rgb(0, 0, 0) 36%);
+}
+
 .hoverText {
-    display: none;
-  }
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
 
-  .hoverText:hover {
-    transform: translateY(-10px) scale(1.05);
-    display: block;
-  }
+.card:hover .hoverText {
+  display: block;
+}
 
-  .cardContent {
-    display: contents;
-  }
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
 
-  .card .cardContent:hover, .card .cardContent:focus {
-    display: none;
-  }
+.hp {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.hpLabel {
+  font-weight: bold;
+}
+
+.pokemonImg {
+  width: 100px;
+  height: auto;
+}
+
+.poke-name {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.types span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.stats p {
+  margin: 5px 0;
+}
+
+.statLabel {
+  font-weight: bold;
+}
+
+.statValue {
+  margin-left: 10px;
+}
+
 
   .container {
   width: 100%;
@@ -340,6 +421,8 @@ header{
   transform: scale(1.5);
   transition: ease-in-out 0.3s;
 }
+
+
 
 @media(min-width: 769px) and (max-width: 1024px){
   .flexObject{
