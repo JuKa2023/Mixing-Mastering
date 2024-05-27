@@ -49,7 +49,6 @@ header{
     display: flex;
     background-color: black;
     color: white;
-    font-size: 1rem;
     margin: auto;
     margin-top: 10px;
 }
@@ -77,7 +76,9 @@ header{
     border-color: #0075BE;
     transform: scale(1.05);
   }
-  
+  button {
+    font-size: 1.2rem;
+  }
   #search:hover, #search:active, #search:focus {
     background-color: #FFCC00;
     color: black;
