@@ -217,7 +217,7 @@ button {
   font-size: 1.2rem;
 }
 
-button:hover, button:active, button:focus, button:visited, #search:hover, #search:active, #search:focus, #search:visited{
+button:hover, button:visited, #search:hover, #search:active, #search:focus, #search:visited{
   background-color: #FFCC00;
   color: black;
   border-color: #0075BE;
