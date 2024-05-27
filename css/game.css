@@ -68,6 +68,7 @@ header{
     background-color: black;
     padding: 10px 20px;
     transition: background-color 0.2s ease-in-out;
+    color: white;
   }
   
   .btn:hover, .btn:active, .btn:focus, a:visited, .btn:link, a:visited:hover, a:focus, a:active, .reset-button:hover, .reset-button:active, .reset-button:focus{

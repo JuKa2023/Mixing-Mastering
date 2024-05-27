@@ -104,6 +104,7 @@ a {
   background-color: black;
   padding: 10px 20px;
   transition: background-color 0.2s ease-in-out;
+  color: white;
 }
 
 .btn:hover, .btn:active .btn:focus a:visited .btn:link a:visited:hover, .playAgain:hover, .playAgain:active .playAgain:focus .playAgain:link .playAgain:visited:hover {
