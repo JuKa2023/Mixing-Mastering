@@ -67,8 +67,10 @@ header {
 }
 .navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   grid-column: 3/4;
+  grid-row: 1/1;
+  justify-content: right;
 }
 .navbtn, .btn {
   cursor: pointer;
@@ -77,14 +79,9 @@ header {
   padding: 10px 20px;
   color: white;
   font-size: 1.2rem;
-  margin-right: 20px;
   transition: background-color 0.2s ease-in-out;
+  margin-right: 20px;
 }
-
-#reset-button{
-  margin-top: 20px;
-}
-
 .navbtn:hover, .btn:hover, #search:hover, #search:active, #search:focus {
   background-color: #ffcc00;
   color: black;
@@ -98,6 +95,11 @@ header {
 }
 .navigation a:hover {
   color: black;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 2/3;
 }
 .logo img {
   width: 200px;
@@ -279,13 +281,19 @@ header {
     margin: 0 20px;
   }
   .card {
-    width: calc(50% - 50px);
-  }
-  .logo img {
-    width: 150px;
+    width: calc(50% - 40px);
   }
 }
 @media (max-width: 480px) {
+  #search {
+    margin: 0;
+  }
+  .flexObject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   .container {
     gap: 20px;
     width: calc(100% - 40px);
