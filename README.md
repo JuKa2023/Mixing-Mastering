@@ -1,11 +1,12 @@
-Danke für den Hinweis! Hier ist die überarbeitete Version des Readme, angepasst an die Verwendung von JavaScript, CSS und HTML ohne Frameworks oder Python:
-
----
-
-# Pokebattle
+# Pokeverse
 
 ## Kurzbeschreibung des Projekts
 Pokebattle ist ein interaktives Projekt, bei dem verschiedene Pokémon recherchiert werden können. Ziel des Projekts ist es, eine Plattform zu schaffen, auf der Nutzer sich zunächst über ihre Pokémon informieren können und anschließend in einem Memory-Spiel die Paare suchen. Das Projekt nutzt eine Pokémon-API, um Daten über Pokémon, ihre Fähigkeiten und Statistiken zu integrieren.
+
+## Autoren
+- [@JuKa2023](https://github.com/JuKa2023)
+- [@Saurabh](https://github.com/sm-fhgr)
+- [@SophiaIseli](https://github.com/SophiaIseli)
 
 ## Features
 - Recherche von Pokémon und deren Fähigkeiten
@@ -32,11 +33,6 @@ Pokebattle ist ein interaktives Projekt, bei dem verschiedene Pokémon recherchi
 ## Verwendete Technologien und API
 - HTML, CSS, JavaScript
 - API: [PokéAPI](https://pokeapi.co/)
-
-## Autoren
-- [@JuKa2023](https://github.com/JuKa2023)
-- [@Saurabh](https://github.com/sm-fhgr)
-- [@SophiaIseli](https://github.com/SophiaIseli)
 
 ## Learnings
 Durch die Arbeit an diesem Projekt konnten wir wertvolle Erfahrungen im Umgang mit APIs und in der Projektorganisation sammeln. Wir haben gelernt, wie wichtig eine klare Aufgabenverteilung und Kommunikation im Team sind. Zudem haben wir unsere Fähigkeiten in der Web-Entwicklung und der Nutzung verschiedener Online-Ressourcen zur Problemlösung verbessert.
