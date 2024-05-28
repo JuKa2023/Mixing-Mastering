@@ -430,10 +430,13 @@ button:hover, button:visited, #search:hover, #search:active, #search:focus, #sea
     padding: 30px 20px;
     border-radius: 10px;
   }
+  .logo img {
+    width: 150px;
+  }
 }
 
 
-/*Mediaquery for Mobile Devices*/
+/* Mediaquery for Mobile Devices */
 @media (max-width: 480px) {
   .container{
     gap: 20px;
@@ -446,5 +449,14 @@ button:hover, button:visited, #search:hover, #search:active, #search:focus, #sea
     padding: 30px 20px;
     border-radius: 10px;
   }
+  .logo img {
+    width: 100px;
+  }
+
+  button a {
+    font-size: 0.5rem;
+  }
+
 }
+
 
