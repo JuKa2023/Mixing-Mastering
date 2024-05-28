@@ -56,15 +56,6 @@
     transition: all 0.5s ease-in-out;
 }
 
-.placed {
-  transform: translate3d(0, 9rem, 0);
-
-}
-
-.hoverText p {
-  transform: translate3d(0, -6rem, 0);
-}
-
 .hoverText p {
   transform: translate3d(0, 2rem, 0);
   transition: all 0.5s ease-in-out;
