@@ -55,6 +55,6 @@ Als besonderes Feature gibt es eine geheime Seite, die nur angezeigt wird, wenn 
 
 ## Kontakt
 Falls Sie Fragen oder Anregungen haben, können Sie uns gerne über GitHub kontaktieren:
-- [@JuKa2023](https://github.com/JuKa2023)
-- [@Saurabh](https://github.com/sm-fhgr)
-- [@SophiaIseli](https://github.com/SophiaIseli)
+- Repository (API): [@JuKa2023](https://github.com/JuKa2023)
+- Code (Js & CSS): [@Saurabh](https://github.com/sm-fhgr)
+- Design: [@SophiaIseli](https://github.com/SophiaIseli)
