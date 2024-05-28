@@ -72,7 +72,7 @@
   padding: 25px 15px;
   font-size: 1em;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 .hoverText img {
@@ -140,7 +140,7 @@
   .pokemonImg {
     display: block;
     width: 50%;
-    max-height: 200px;
+    max-height: 50%;
     position: relative;
     margin: 20px auto;
   }
