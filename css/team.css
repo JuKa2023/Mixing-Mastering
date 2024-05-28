@@ -18,24 +18,6 @@
 }
 
 
-.flexObject {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-.card {
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
 .card:hover {
     transform: translateY(-10px) scale(1.05);
     transition: all 0.2s ease-in-out;
@@ -64,13 +46,19 @@
 
 #card1 .hoverText, #card2 .hoverText, #card3 .hoverText, #card1:hover .cardContent, #card2:hover .cardContent, #card3:hover .cardContent {
     transform: scale(4);
+    transition: transform 0.5s ease-in-out;
     display: none;
 }
 
- #card1:hover .hoverText, #card2:hover .hoverText, #card3:hover .hoverText, #card1 .cardContent, #card2 .cardContent, #card3 .cardContent{
+ #card1:hover .hoverText, #card2:hover .hoverText, #card3:hover .hoverText, #card1 .cardContent, #card2 .cardContent, #card3 .cardContent {
     display: block;
     transform: translateY(-10px) scale(1.05);
     transition: all 0.5s ease-in-out;
+}
+
+.placed {
+  transform: translate3d(0, 9rem, 0);
+
 }
 
 .hoverText p {
@@ -78,7 +66,8 @@
 }
 
 .hoverText p {
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 2rem, 0);
+  transition: all 0.5s ease-in-out;
   position: relative;
   padding: 25px 15px;
   font-size: 1em;
@@ -87,32 +76,19 @@
 }
 
 .hoverText img {
-  width: 33%;
-  height: auto;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+  width:auto;
+  height: 100%;
   position: relative;
   margin: 20px auto;
 }
 
 .flexObject img {
-  width: 33%;
-  height: auto;
+  width: auto;
+  height: 100%;
   position: relative;
   margin: 20px auto;
-}
-
-
-.hp {
-  font-size: 1.2em;
-  margin: 0;
-}
-
-.hpLabel {
-  font-weight: bold;
-}
-
-.pokemonImg {
-  width: 100px;
-  height: auto;
 }
 
 .poke-name {
@@ -120,13 +96,14 @@
   margin: 10px 0;
 }
 
-.types span {
+.stats span {
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
   margin-right: 5px;
   color: white;
   font-weight: bold;
+  align-content: baseline;
 }
 
 .stats p {
@@ -153,19 +130,10 @@
   .card {
     position: relative;
     width: 25%;
-    height: 40vh;
+    height: 60vh;
     padding: 30px 20px;
     border-radius: 10px;
   }
-
-  /* .card:hover {
-    transform: translateY(-10px) scale(1.05);
-    transition: all 0.2s ease-in-out;
-    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-    
-  } */
 
 
 
@@ -177,40 +145,12 @@
     margin: 20px auto;
   }
 
-  .hp {
-    width: 80px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 30px;
-    margin-left: auto;
-    font-weight: 400;
-  }
   .poke-name {
     text-align: center;
     font-weight: 400;
     color: #ffffff;
   }
-  .types {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px 0 40px 0;
-    width: 100%;
-  }
-  .hp span,
-  .types span {
-    font-size: 12px;
-    letter-spacing: 0.4px;
-    font-weight: 600;
-  }
-
-  .types span {
-    padding: 5px 20px;
-    border-radius: 20px;
-    color: #ffffff;
-    font-weight: 2000;
-  }
+ 
   .stats {
     display: flex;
     align-items: center;
@@ -233,12 +173,6 @@
     left: 0;
     width: 100%;
     text-align: center; /* Centers the label */
-  }
-
-  .hpLabel{
-    font-size: 14px;
-    font-weight: 600;
-    color: #010101;
   }
 
   .statValue {
@@ -327,120 +261,6 @@ button:hover, button:active, button:focus, button:visited {
 .logo img:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
-}
-
-/* Styling for typeselection */
-
-.typeselection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: scroll;
-  white-space: nowrap;
-  gap: 20px;
-  width: 100%;
-}
-
-.type-button{
-  flex-shrink: 0;
-}
-
-/* Type icons colors and shadows */
-
-
-.bug {
-  background: #26de81;
-  box-shadow: 0 0 10px #26de81;
-}
-
-.dark {
-  background: #595761;
-  box-shadow: 0 0 10px #595761;
-} /*color of backgroudn for proof to che*/
-
-.dragon {
-  background: rgb(255, 234, 167);
-  box-shadow: 0 0 10px #ffeaa7;
-}
-
-.electric {
-  background: #fed330;
-  box-shadow: 0 0 10px #fed330;
-}
-
-.fire {
-  background: #f0932b;
-  box-shadow: 0 0 10px #f0932b;
-}
-
-.fairy {
-  background: #FF0069;
-  box-shadow: 0 0 10px #FF0069;
-}
-
-.fighting {
-  background: #30336b;
-  box-shadow: 0 0 10px #30336b;
-}
-
-.flying {
-  background: #81ecec;
-  box-shadow: 0 0 10px #81ecec;
-}
-
-.ghost {
-  background: #a55eea;
-  box-shadow: 0 0 10px #a55eea;
-}
-
-.grass {
-  background: #00b894;
-  box-shadow: 0 0 10px #00b894;
-}
-
-.ground {
-  background: #EFB549;
-  box-shadow: 0 0 10px #EFB549;
-}
-
-.ice {
-  background: #74b9ff;
-  box-shadow: 0 0 10px #74b9ff;
-}
-
-.normal {
-  background: #95afc0;
-  box-shadow: 0 0 10px #95afc0;
-}
-
-.poison {
-  background: #6c5ce7;
-  box-shadow: 0 0 10px #6c5ce7;
-}
-
-.psychic {
-  background: #a29bfe;
-  box-shadow: 0 0 10px #a29bfe;
-}
-
-.rock {
-  background: #2d3436;
-  box-shadow: 0 0 10px #2d3436;
-}
-
-.steel {
-  background: #7f8fa6;
-  box-shadow: 0 0 10px #7f8fa6;
-}
-
-.water {
-  background: #0190FF;
-  box-shadow: 0 0 10px #0190FF;
-}
-
-.icon:hover {
-  transform: scale(1.5);
-  transition: ease-in-out 0.3s;
 }
 
 
