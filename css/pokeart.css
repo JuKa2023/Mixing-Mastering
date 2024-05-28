@@ -97,6 +97,11 @@ a {
 
 }
 
+.navbtn {
+  margin-right: 20px;
+}
+
+
 .btn, .playAgain {
   cursor: pointer;
   border-radius: 10px;

@@ -204,6 +204,11 @@ header{
   justify-content: right;
 }
 
+.navbtn {
+  margin-right: 20px;
+}
+
+
 .btn {
   cursor: pointer;
   border-radius: 10px;

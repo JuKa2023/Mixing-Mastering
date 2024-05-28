@@ -146,6 +146,9 @@ p {
     padding: 0;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
  }
+ .navbtn {
+  margin-right: 20px;
+}
 
 
 #game-board {
