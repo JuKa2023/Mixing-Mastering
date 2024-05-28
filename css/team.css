@@ -86,6 +86,19 @@
   text-align: left;
 }
 
+.hoverText img {
+  width: 33%;
+  height: auto;
+  position: relative;
+  margin: 20px auto;
+}
+
+.flexObject img {
+  width: 33%;
+  height: auto;
+  position: relative;
+  margin: 20px auto;
+}
 
 
 .hp {
