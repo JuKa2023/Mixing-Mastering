@@ -1,3 +1,6 @@
+Danke für den Hinweis! Hier ist die überarbeitete Version des Readme, angepasst an die Verwendung von JavaScript, CSS und HTML ohne Frameworks oder Python:
+
+---
 
 # Pokebattle
 
@@ -18,21 +21,16 @@ Pokebattle ist ein interaktives Projekt, bei dem verschiedene Pokémon recherchi
    ```bash
    cd pokebattle
    ```
-3. **Abhängigkeiten installieren:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. **Öffne `index.html` in deinem bevorzugten Browser.**
 
 ## Nutzung
 1. **Projekt starten:**
-   ```bash
-   python app.py
-   ```
-2. **Im Browser öffnen:**
-   Gehe zu `http://localhost:5000`
+   Öffne `index.html` in deinem bevorzugten Browser.
+2. **Im Browser verwenden:**
+   Gehe zu `http://localhost/` (sofern du einen lokalen Server verwendest, ansonsten öffne einfach die HTML-Datei direkt).
 
 ## Verwendete Technologien und API
-- Programmiersprache: Js, CSS & Html
+- HTML, CSS, JavaScript
 - API: [PokéAPI](https://pokeapi.co/)
 
 ## Autoren
@@ -41,7 +39,7 @@ Pokebattle ist ein interaktives Projekt, bei dem verschiedene Pokémon recherchi
 - [@SophiaIseli](https://github.com/SophiaIseli)
 
 ## Learnings
-Durch die Arbeit an diesem Projekt konnten wir wertvolle Erfahrungen im Umgang mit APIs und in der Projektorganisation sammeln. Wir haben gelernt, wie wichtig eine klare Aufgabenverteilung und Kommunikation im Team sind. Zudem haben wir unsere Fähigkeiten in der Python-Programmierung und der Nutzung verschiedener Online-Ressourcen zur Problemlösung verbessert.
+Durch die Arbeit an diesem Projekt konnten wir wertvolle Erfahrungen im Umgang mit APIs und in der Projektorganisation sammeln. Wir haben gelernt, wie wichtig eine klare Aufgabenverteilung und Kommunikation im Team sind. Zudem haben wir unsere Fähigkeiten in der Web-Entwicklung und der Nutzung verschiedener Online-Ressourcen zur Problemlösung verbessert.
 
 ## Schwierigkeiten
 Zu Beginn des Projekts standen wir vor der Herausforderung, die geeignete API zu finden und in unser System zu integrieren. Nach der erfolgreichen Auswahl und Integration der API konnten wir uns jedoch gut organisieren. Die Hauptschwierigkeiten lagen in der Koordination der Teamarbeit und der Vermeidung von doppelten Arbeiten und Code-Konflikten. Durch eine klare Aufgabenverteilung und regelmäßige Kommunikation konnten wir diese Herausforderungen erfolgreich meistern.
@@ -52,7 +50,7 @@ Zur Vorbereitung auf den Kurs schauten wir verschiedene Tutorials auf [YouTube](
 Während der Entwicklung stießen wir auf technische Herausforderungen. In solchen Fällen griffen wir auf die Notizen aus dem Unterricht zurück. Wenn uns das Kursmaterial nicht weiterhalf, kontaktierten wir [ChatGPT](https://chat.openai.com/c/0c86d02e-cf73-4878-8671-4585188888fa), um Lösungen für Codeprobleme zu finden und uns bei Unklarheiten in der Programmierung zu unterstützen. Diese Vorgehensweise trug wesentlich zur Effizienz und Qualität des Entwicklungsprozesses bei. Natürlich gab es auch immer wieder Punkte, wo wir lieber auf menschliche Hilfe zurückgreifen wollten. In diesen Fällen erhielten wir Unterstützung durch unsere Dozenten oder Freunde, die in der Programmierwelt eingebettet sind.
 
 ## Erweiterungsmöglichkeiten
-Das Projekt könnte in Zukunft durch ein interaktives Pokémon-Battle erweitert werden. Dabei könnten die Spielregeln des Pokémon-Kartenspiels integriert werden, hierfür müsste jeder Nutzer einen Account erstellen, um teilzunehmen. Jeden Tag könnten die Nutzer zufällig neue Pokémon-Karten erhalten. Diese Erweiterung wurde nicht umgesetzt, da die Einbindung von Accounts eine Datenbanken erfordert, was den Einsatz von PHP oder eines Frameworks voraussetzen würde. Da unsere Gruppe nur geringes Wissen hatte mit PHP und wir ja in den kommenden Semestern noch PHP anschauen werden, wurde diese Erweiterung nicht eingebaut.
+Das Projekt könnte in Zukunft durch ein interaktives Pokémon-Battle erweitert werden. Dabei könnten die Spielregeln des Pokémon-Kartenspiels integriert werden, hierfür müsste jeder Nutzer einen Account erstellen, um teilzunehmen. Jeden Tag könnten die Nutzer zufällig neue Pokémon-Karten erhalten. Diese Erweiterung wurde nicht umgesetzt, da die Einbindung von Accounts eine Datenbanken erfordert, was den Einsatz von serverseitigen Technologien voraussetzen würde. Da unsere Gruppe nur geringes Wissen in diesem Bereich hatte und wir ja in den kommenden Semestern noch mehr darüber lernen werden, wurde diese Erweiterung nicht eingebaut.
 
 ## Geheime Seite
 Als besonderes Feature gibt es eine geheime Seite, die nur angezeigt wird, wenn das Memory-Spiel korrekt ausgefüllt wird. Diese Seite enthält exklusive Pokémon-Artworks und kann unter folgendem Link erreicht werden: [Geheime Seite](https://543894-12.web.fhgr.ch/pokeart.html).
