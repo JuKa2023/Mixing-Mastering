@@ -199,6 +199,9 @@ header{
   grid-row: 1/1;
   justify-content: right;
 }
+.navbtn {
+  margin-right: 20px;
+}
 
 .btn {
   cursor: pointer;
