@@ -71,6 +71,7 @@ header {
   grid-column: 3/4;
   grid-row: 1/1;
   justify-content: right;
+  margin-left: 20px;
 }
 .navbtn, .btn {
   cursor: pointer;
@@ -107,6 +108,18 @@ header {
 }
 .logo img:hover {
   transform: scale(1.1);
+}
+
+.hamburger {
+  display: none;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
 }
 
 /* Flex Object and Search Styles */
@@ -248,6 +261,10 @@ header {
 .water { background: #0190ff; box-shadow: 0 0 10px #0190ff; }
 .icon:hover { transform: scale(1.5); transition: ease-in-out 0.3s; }
 
+.reset{
+  margin-top: 20px;
+}
+
 /* Media Queries */
 @media (min-width: 769px) and (max-width: 1024px) {
   .flexObject {
@@ -267,13 +284,17 @@ header {
 }
 @media (min-width: 481px) and (max-width: 768px) {
   #search {
-    margin: 0;
+    margin: 10px;
+  }
+
+  .reset{
+    margin-top: 10px;
   }
   .flexObject {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .container {
     gap: 20px;
@@ -281,12 +302,20 @@ header {
     margin: 0 20px;
   }
   .card {
-    width: calc(50% - 40px);
+    width: calc(50% - 50px);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
   }
 }
 @media (max-width: 480px) {
   #search {
-    margin: 0;
+    margin: 10;
+  }
+  .reset{
+    margin-top: 10px;
   }
   .flexObject {
     display: flex;
@@ -294,6 +323,7 @@ header {
     align-items: center;
     margin-bottom: 20px;
   }
+  
   .container {
     gap: 20px;
     width: calc(100% - 40px);

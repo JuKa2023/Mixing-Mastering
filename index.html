@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokeverse</title>
+    <title>Pokemon Card Generator</title>
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -22,20 +22,19 @@
     <div id="page-content">
 
       <header class="headerGrid">
-        
-        <div class="logo col"><img src="pokelogo.png" alt="pokemon logo"></div>
         <nav class="navigation col">
-          <a href="index.html"><button class="btn navbtn" >Poképedia</button></a>
-          <a href="game.html"><button class="btn navbtn">PokéMem</button></a>
-          <a href="team.html"><button class="btn navbtn">Team</button></a>
-        </nav>
-
-      </header>
+            <a href="index.html"><button class="btn navbtn" >Poképedia</button></a>
+            <a href="game.html"><button class="btn navbtn">PokéMem</button></a>
+            <a href="team.html"><button class="btn navbtn">Team</button></a>
+          </nav>
+        <div class="logo col"><img src="pokelogo.png" alt="pokemon logo"></div>
+  
+    </header>
         <main class="breiteMain">  
           <div class="flexObject">
             <input type="text" id="search" placeholder="Suche nach einem Pokémon"> 
             <div class="typeselection" id="types"></div>
-            <button class="btn" id="reset-button">Reset</button>
+            <button class="btn reset" >Reset</button>
 
           </div>
           <div class="container" id="card-container"></div>
