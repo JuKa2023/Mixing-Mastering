@@ -251,12 +251,6 @@ button:hover, button:active, button:focus, button:visited {
   width: 200px;
 }
 
-.logo img:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.2s;
-}
-
-
 
 @media(min-width: 769px) and (max-width: 1024px){
   .flexObject{
