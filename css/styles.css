@@ -304,11 +304,6 @@ header {
   .card {
     width: calc(50% - 50px);
   }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    margin-right: 20px;
-  }
 }
 @media (max-width: 480px) {
   #search {
