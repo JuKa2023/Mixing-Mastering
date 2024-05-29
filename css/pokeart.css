@@ -149,8 +149,8 @@ transform: scale(1.05);
 
 #canvas1 {
     border: 2px solid white;
-    width: 976px;
-    height: 549px;
+    width: 100%;
+    height: auto;
     
 }
 
