@@ -158,7 +158,7 @@ function createTypeButtons() {
     let btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
     button.setAttribute('title', btnTxthover);
     const icon = document.createElement('img');
-    icon.src = 'icons/' + type + '.svg';
+    icon.src = 'types/' + type + '.png';
     icon.alt = type;
     icon.style.borderRadius = '50%';
     icon.style.width = '24px';
