@@ -226,12 +226,12 @@ header {
 /* Type Selection Styles */
 .typeselection {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   overflow-x: scroll;
   white-space: nowrap;
   gap: 20px;
-  width: 100%;
+  max-width: 100%;
 }
 .type-button {
   flex-shrink: 0;
