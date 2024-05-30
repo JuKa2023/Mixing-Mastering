@@ -196,7 +196,7 @@ header {
   padding: 5px 20px;
   border-radius: 20px;
   color: #ffffff;
-  font-weight: 2000;
+  font-weight: 200;
 }
 .stats {
   display: flex;
@@ -304,7 +304,7 @@ header {
 }
 @media (max-width: 480px) {
   #search {
-    margin: 10;
+    margin: 10px;
   }
   .reset{
     margin-top: 10px;
