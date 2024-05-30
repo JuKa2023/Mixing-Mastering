@@ -72,12 +72,42 @@ header {
 
 @media (min-width: 1025px) {
     .logo {
-      grid-column: 2/3;
+        grid-column: 2/3;
     }
-  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .headerGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navbtn {
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}
+
 
 @media (max-width: 480px) {
+
+    .headerGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
     .navbtn {
         font-size: 0.5rem;
+    }
+
+    .logo img {
+        width: 100px;
     }
 }

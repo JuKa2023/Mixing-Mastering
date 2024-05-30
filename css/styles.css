@@ -291,7 +291,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .statLabel {
   font-size: 12px;
   color: #ccc;
@@ -377,9 +376,5 @@ body {
 
   .card {
     width: calc(100% - 50px);
-  }
-
-  .logo img {
-    width: 100px;
   }
 }
