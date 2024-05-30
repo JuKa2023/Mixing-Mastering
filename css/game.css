@@ -110,10 +110,10 @@ button:hover, button:active, button:focus, button:visited {
   width: 200px;
 }
 
-.logo img:hover {
+/* .logo img:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
-}
+} */
 
 h1 {
   text-align: center;
