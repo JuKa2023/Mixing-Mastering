@@ -172,83 +172,11 @@
 
 
 
-  /* styling of the header and navbar */
-header{
-  padding: 0;
-  margin-bottom: 20px;
-  z-index: 2000;
+
+@media (min-width: 1025px) {
+  .logo{
+    grid-column: 2/3;
 }
-
-.headerGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.headerGrid .col {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 3/4;
-  grid-row: 1/1;
-  justify-content: right;
-}
-.navbtn {
-  margin-right: 20px;
-}
-
-.btn {
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: black;
-  padding: 10px 20px;
-  transition: background-color 0.2s ease-in-out;
-  color: white;
-  font-size: 1.2rem;
-}
-
-button:hover, button:active, button:focus, button:visited {
-  background-color: #FFCC00;
-  color: black;
-  border-color: #0075BE;
-  transform: scale(1.05);
-}
-
-
-.navigation a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: white;
-}
-
-.navigation a:hover {
-  color: black;
-}
-
-.btn:link, a:visited, a:visited:hover, a:focus, a:active {
-  text-decoration: none;
-}
-
-#team {
-  margin-right: 20px;
-}
-
-/* Styling for the logo */
-
-.headerGrid .logo {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 2/3;
-}
-
-
-.logo img {
-  width: 200px;
 }
 
 

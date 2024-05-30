@@ -21,64 +21,10 @@ main {
   display: flex;
 }
 
-/* Header Styling*/ 
-
-header{
-  padding: 0;
-  margin-bottom: 20px;
-  z-index: 2000;
-}
-
-.headerGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.headerGrid .col {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 3/4;
-  grid-row: 1/1;
-  justify-content: right;
-}
-
-.navbtn, .btn {
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: black;
-  padding: 10px 20px;
-  color: white;
-  font-size: 1.2rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.headerGrid .logo {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 2/3;
-}
-
-
-.logo img {
-  width: 200px;
-}
-
 a {
   text-decoration: none;
   
   }
-  
-  .navbtn {
-  margin-right: 20px;
-  }
-
 /* Buttopn Styling */
 
 #playAgain {
@@ -103,8 +49,6 @@ margin: auto;
 margin-top: 10px;
 text-decoration: none;
 }
-
-
 
 
 .btn, .playAgain {
@@ -147,20 +91,6 @@ transform: scale(1.05);
     width: 100%;
     height: auto;
     
-}
-
-#team {
-  margin-right: 20px;
-}
-
-.navigation a {
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.btn:link {
-  text-decoration: none;
-  
 }
 
 /* Link Styling */

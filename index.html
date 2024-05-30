@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon Card Generator</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
 
-    <div class="loader-container">
-      
-      
-      <div class="loader"></div>
-    </div>
-    <div id="page-content">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Card Generator</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
 
-      <header class="headerGrid">
-        <nav class="navigation col">
-            <a href="index.html"><button class="btn navbtn" >Poképedia</button></a>
-            <a href="game.html"><button class="btn navbtn">PokéMem</button></a>
-            <a href="team.html"><button class="btn navbtn">Team</button></a>
-          </nav>
-        <div class="logo col"><img src="pokelogo.png" alt="pokemon logo"></div>
-  
+<body>
+
+  <div class="loader-container">
+
+
+    <div class="loader"></div>
+  </div>
+
+  <div id="page-content">
+
+    <header class="headerGrid">
+      <div class="logo col">
+        <img src="pokelogo.png" alt="pokemon logo">
+      </div>
+      <nav class="navigation col">
+        <a class="btn navbtn" href="index.html">Poképedia</a>
+        <a class="btn navbtn" href="game.html">PokéMem</a>
+        <a class="btn navbtn" href="team.html">Team</a>
+      </nav>
     </header>
-        <main class="breiteMain">  
-          <div class="flexObject">
-            <input type="text" id="search" placeholder="Suche nach einem Pokémon"> 
-            <div class="typeselection" id="types"></div>
-            <button class="btn reset" id="reset-button">Reset</button>
+    <main class="breiteMain">
+      <div class="flexObject">
+        <input type="text" id="search" placeholder="Suche nach einem Pokémon">
+        <div class="typeselection" id="types"></div>
+        <button class="btn reset" id="reset-button">Reset</button>
 
-          </div>
-          <div class="container" id="card-container"></div>
-          </main>
-    </div>
-    <script src="/js/script.js"></script>
-  </body>
+      </div>
+      <div class="container" id="card-container"></div>
+    </main>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>

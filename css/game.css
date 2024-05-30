@@ -24,32 +24,6 @@ main {
   width: 100%;
 }
 
-header {
-  padding: 0;
-  margin-bottom: 20px;
-  z-index: 2000;
-}
-
-.headerGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.headerGrid .col {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 3/4;
-  grid-row: 1/1;
-  justify-content: right;
-}
-
 .reset-button {
   display: flex;
   background-color: black;
@@ -58,7 +32,8 @@ header {
   margin-top: 10px;
 }
 
-.btn, .reset-button {
+.btn,
+.reset-button {
   cursor: pointer;
   border-radius: 10px;
   background-color: black;
@@ -68,14 +43,10 @@ header {
   font-size: 1.2rem;
 }
 
-button:hover, button:active, button:focus, button:visited {
-  background-color: #FFCC00;
-  color: black;
-  border-color: #0075BE;
-  transform: scale(1.05);
-}
-
-#search:hover, #search:active, #search:focus {
+button:hover,
+button:active,
+button:focus,
+button:visited {
   background-color: #FFCC00;
   color: black;
   border-color: #0075BE;
@@ -86,33 +57,12 @@ button:hover, button:active, button:focus, button:visited {
   margin-right: 20px;
 }
 
-.navigation a {
+.btn:link,
+a:visited,
+a:visited:hover,
+a:focus,
+a:active {
   text-decoration: none;
-  font-size: 1rem;
-  color: white;
-}
-
-.navigation a:hover {
-  color: black;
-}
-
-.btn:link, a:visited, a:visited:hover, a:focus, a:active {
-  text-decoration: none;
-}
-
-.headerGrid .logo {
-  display: flex;
-  justify-content: space-around;
-  grid-column: 2/3;
-}
-
-.logo img {
-  width: 200px;
-}
-
-.logo img:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.2s;
 }
 
 h1 {
@@ -135,16 +85,12 @@ p {
   aspect-ratio: 1;
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease;
   background-color: #000000;
   padding: 0;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-}
-
-.navbtn {
-  margin-right: 20px;
 }
 
 #game-board {
@@ -167,7 +113,7 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   font-family: 'Arial', sans-serif;
   transition: transform 0.2s ease;
@@ -205,54 +151,57 @@ p {
 /* media queries for tablets & small monitors */
 @media (min-width: 769px) and (max-width: 1024px) {
   #game {
-      width: 80%;
-      max-width: 600px;
-      aspect-ratio: 1;
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 1;
   }
 
   .tiles {
-      width: 125px;
-      height: 125px;
+    width: 125px;
+    height: 125px;
   }
 
-  .cardBack, .tiles img {
-      width: 125px;
-      height: 125px;
+  .cardBack,
+  .tiles img {
+    width: 125px;
+    height: 125px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #game {
-      width: 90%;
-      max-width: 600px;
-      aspect-ratio: 1;
+    width: 90%;
+    max-width: 600px;
+    aspect-ratio: 1;
   }
 
   .tiles {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
 
-  .cardBack, .tiles img {
-      width: 100px;
-      height: 100px;
+  .cardBack,
+  .tiles img {
+    width: 100px;
+    height: 100px;
   }
 }
 
 @media (max-width: 480px) {
   #game {
-      width: 100%;
-      max-width: 400px;
-      aspect-ratio: 1;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
   }
 
   .tiles {
-      width: 80px;
-      height: 80px;
+    width: 80px;
+    height: 80px;
   }
 
-  .cardBack, .tiles img {
-      width: 80px;
-      height: 80px;
+  .cardBack,
+  .tiles img {
+    width: 80px;
+    height: 80px;
   }
 }
