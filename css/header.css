@@ -106,6 +106,7 @@ section {
     z-index: 3000;
     position: absolute;
     margin-top: 10px;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 }
 
 /* Show the section when it has the active class */
@@ -116,16 +117,16 @@ section.active {
     padding: 10px;
     background-color: black;
     border-radius: 10px;
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+
 }
-
-
 
 section a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 
 section a:hover {
