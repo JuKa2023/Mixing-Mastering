@@ -20,6 +20,23 @@ body {
   margin-bottom: 20px;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* over all Style of the Cards*/
+.card {
+  position: relative;
+  width: 25%;
+  padding: 30px 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   transition: all 0.2s ease-in-out;
@@ -28,6 +45,8 @@ body {
   -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 
 }
+
+/*style of individual Cards*/
 
 #card1 {
   background: radial-gradient(circle at 50% 0%, rgb(240, 147, 43) 36%, rgb(0, 0, 0) 36%);
@@ -41,6 +60,7 @@ body {
   background: radial-gradient(circle at 50% 0%, rgb(162, 155, 254) 36%, rgb(0, 0, 0) 36%);
 }
 
+/*Cardelemet Styles*/
 #card1:hover,
 #card2:hover,
 #card3:hover {
@@ -121,25 +141,6 @@ body {
 .statValue {
   margin-left: 10px;
 }
-
-
-.container {
-  width: 100%;
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  position: relative;
-  width: 25%;
-  padding: 30px 20px;
-  border-radius: 10px;
-  height: fit-content;
-}
-
-
 
 .pokemonImg {
   display: block;
