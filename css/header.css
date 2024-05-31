@@ -77,6 +77,15 @@ header {
     cursor: pointer;
     margin-left: auto;
     border: solid 2px black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.line {
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .burgermenu:hover {
@@ -85,15 +94,18 @@ header {
     border-color: #0075be;
 }
 
-.burgermenu span {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
-    margin: 5px;
+.burgermenu:hover .line {
+    background-color: black;
 }
+
+.burgermenu span {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
 
 /* Dropdown Menu Styling */
 .navdropdown {
