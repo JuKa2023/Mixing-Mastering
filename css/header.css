@@ -66,6 +66,8 @@ header {
     width: 200px;
 }
 
+/*Burger Menu Icon Styling*/
+
 .burgermenu {
     display: none;
     background: black;
@@ -89,6 +91,47 @@ header {
     transition: all 0.3s ease-in-out;
     background-color: #ffffff;
     margin: 5px;
+}
+
+/* Dropdown Menu styling*/
+
+/* Hide the section by default */
+section {
+    display: none;
+    top: 60px;
+    right: 20px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 3000;
+    position: absolute;
+    margin-top: 10px;
+}
+
+/* Show the section when it has the active class */
+section.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+
+section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+section a:hover {
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 10px;
 }
 
 @media (min-width: 1025px) {
