@@ -53,15 +53,15 @@ body {
   }
 }
 
- .btn:hover,
-  #search:hover,
-  #search:active,
-  #search:focus {
-    background-color: #ffcc00;
-    color: black;
-    border-color: #0075be;
-    border-style: solid;
-  }
+.btn:hover,
+#search:hover,
+#search:active,
+#search:focus {
+  background-color: #ffcc00;
+  color: black;
+  border-color: #0075be;
+  border-style: solid;
+}
 
 .bar {
   display: block;
@@ -291,6 +291,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .statLabel {
   font-size: 12px;
   color: #ccc;
@@ -324,6 +325,7 @@ body {
     width: calc(33% - 60px);
   }
 }
+
 
 @media (min-width: 481px) and (max-width: 768px) {
   #search {

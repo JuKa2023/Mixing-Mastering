@@ -66,14 +66,46 @@ header {
     width: 200px;
 }
 
-.hamburger {
+.burgermenu {
     display: none;
+    background: black;
+    height: 40px;
+    width: 40px;
+    border-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.burgermenu span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+    margin: 5px;
 }
 
 @media (min-width: 1025px) {
     .logo {
         grid-column: 2/3;
     }
+}
+
+@media (max-width: 768px) {
+    .headerGrid .navigation {
+        display: none;
+    }
+
+    .burgermenu {
+        display: block;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -91,10 +123,20 @@ header {
     .logo img {
         width: 150px;
     }
+
+    .navigation {
+        display: none;
+    }
+
+    .burgermenu {
+        display: block;
+    }
 }
 
-
 @media (max-width: 480px) {
+    nav {
+        display: none;
+    }
 
     .headerGrid {
         display: flex;

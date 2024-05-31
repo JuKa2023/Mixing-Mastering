@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,38 +10,38 @@
   <link rel="stylesheet" href="/css/header.css" />
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
-
 <body>
 
   <div class="loader-container">
-
-
     <div class="loader"></div>
   </div>
 
   <div id="page-content">
-
     <header class="headerGrid">
       <div class="logo col">
         <img src="pokelogo.png" alt="pokemon logo">
       </div>
-      <nav class="navigation col">
+      <nav class="navigation col" id="myLinks">
         <a class="btn navbtn" href="index.html">Poképedia</a>
         <a class="btn navbtn" href="game.html">PokéMem</a>
         <a class="btn navbtn" href="team.html">Team</a>
       </nav>
+      <div class="burgermenu" id="burgerMenu" onclick="myFunction()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
     <main class="breiteMain">
       <div class="flexObject">
         <input type="text" id="search" placeholder="Suche nach einem Pokémon">
         <div class="typeselection" id="types"></div>
         <button class="btn reset" id="reset-button">Reset</button>
-
       </div>
       <div class="container" id="card-container"></div>
     </main>
   </div>
   <script src="/js/script.js"></script>
+  <script src="/js/burger.js"></script>
 </body>
-
 </html>
