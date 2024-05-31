@@ -2,35 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/game.css">
-    <script src="js/game.js" defer></script>
-    <title>PokeMem - The Pokemon Memory Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/game.css">
+  <script defer src="/js/game.js"></script>
+  <script src="/js/burger.js"></script>
+  <title>PokeMem - The Pokemon Memory Game</title>
 </head>
 
 <body>
-    <header class="headerGrid">
-        <div class="logo col">
-            <img src="pokelogo.png" alt="pokemon logo">
-        </div>
-        <nav class="navigation col">
-            <a class="btn navbtn" href="index.html">Poképedia</a>
-            <a class="btn navbtn" href="game.html">PokéMem</a>
-            <a class="btn navbtn" href="team.html">Team</a>
-        </nav>
 
-    </header>
+  <header class="headerGrid">
+    <div class="logo col">
+      <img src="pokelogo.png" alt="pokemon logo">
+    </div>
+    <nav class="navigation col" id="myLinks">
+      <a class="btn navbtn" href="index.html">Poképedia</a>
+      <a class="btn navbtn" href="game.html">PokéMem</a>
+      <a class="btn navbtn" href="team.html">Team</a>
+    </nav>
+    <div class="burgermenu" id="burgerMenu" onclick="myFunction()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-    <main>
-        <section id="game">
-            <div id="game-board">
-            </div>
-        </section>
-    </main>
+  <section class="navdropdown">
+    <a class="dopdownopt" href="index.html">Poképedia</a>
+    <a class="dopdownopt" href="game.html">PokéMem</a>
+    <a class="dopdownopt" href="team.html">Team</a>
+  </section>
 
-
+  <main>
+    <section id="game">
+      <div id="game-board">
+      </div>
+    </section>
+  </main>
 
 </body>
 

@@ -80,6 +80,13 @@ header {
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
     margin-left: auto;
+    border: solid 2px black;
+}
+
+.burgermenu:hover {
+    background-color: #ffcc00;
+    color: black;
+    border-color: #0075be;
 }
 
 .burgermenu span {
@@ -96,7 +103,7 @@ header {
 /* Dropdown Menu styling*/
 
 /* Hide the section by default */
-section {
+.navdropdown {
     display: none;
     top: 60px;
     right: 20px;
@@ -110,7 +117,7 @@ section {
 }
 
 /* Show the section when it has the active class */
-section.active {
+.navdropdown.active {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -121,15 +128,16 @@ section.active {
 
 }
 
-section a {
+.navdropdown a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
     transition: background-color 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
-section a:hover {
+.navdropdown a:hover {
     background-color: #ffcc00;
     color: black;
     border-radius: 10px;

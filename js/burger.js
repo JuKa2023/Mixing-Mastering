@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const burgerMenu = document.getElementById("burgerMenu");
-    const section = document.querySelector("section");
+    const section = document.getElementsByClassName("navdropdown")[0];
 
     burgerMenu.addEventListener("click", () => {
         if (section.classList.contains("active")) {

@@ -273,8 +273,6 @@ tiles.forEach((tile) => {
   });
 });
 
-// FINITO PASTA FINALLY DONE!
-
 
 
 

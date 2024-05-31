@@ -11,10 +11,6 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 main {
@@ -51,10 +47,6 @@ button:visited {
   color: black;
   border-color: #0075BE;
   transform: scale(1.05);
-}
-
-#team {
-  margin-right: 20px;
 }
 
 .btn:link,
