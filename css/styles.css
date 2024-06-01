@@ -67,7 +67,6 @@ body {
   display: block;
   width: 25px;
   height: 3px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #000000;
 }
@@ -84,14 +83,14 @@ body {
 #search {
   padding: 10px 20px;
   border-radius: 30px;
-  border: none;
+  border: solid 2px transparent;
   outline: none;
   margin: 20px;
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
   background-color: #000000;
-  border: solid 2px black;
+  box-sizing: border-box;
 }
 
 /* Type Selection Styles */

@@ -76,7 +76,7 @@ header {
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
     margin-left: auto;
-    border: solid 2px black;
+    border: solid 2px transparent;
     padding: 5px;
     box-sizing: border-box;
 }
