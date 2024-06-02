@@ -38,10 +38,10 @@ function capitalizeFirstLetter(string) {
 }
 
 async function init() {
-  let url = `https://pokeapi.co/api/v2/pokemon?limit=${anzahlPokemon}&offset=0`;
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=${anzahlPokemon}&offset=0`;
   const pokemonWithoutDetails = await fetchData(url);
   allPokemon = await Promise.all(pokemonWithoutDetails.results.map(async (pokemon) => {
-    let detailedData = await fetchData(pokemon.url);
+    const detailedData = await fetchData(pokemon.url);
     return detailedData;
   }));
 
@@ -52,7 +52,7 @@ async function init() {
 }
 
 async function suchePokemon(searchInput) {
-  let filteredPokemon = allPokemon.filter(wantedPokemon => wantedPokemon.name.includes(searchInput.toLowerCase()));
+  const filteredPokemon = allPokemon.filter(wantedPokemon => wantedPokemon.name.includes(searchInput.toLowerCase()));
   app.innerHTML = '';
   filteredPokemon.forEach(pokemon => {
     createCard(pokemon);
@@ -70,8 +70,8 @@ searchBox.addEventListener('input', function () {
 
 async function fetchData(url) {
   try {
-    let response = await fetch(url);
-    let data = await response.json();
+    const response = await fetch(url);
+    const data = await response.json();
     return data;
   } catch (error) {
     console.error(error);
@@ -81,52 +81,52 @@ async function fetchData(url) {
 // Create card for each pokemon
 
 function createCard(pokemon) {
-  let card = document.createElement("div");
+  const card = document.createElement("div");
   card.className = 'card';
 
-  let hp = document.createElement("p");
+  const hp = document.createElement("p");
   hp.classList.add('hp');
   hp.innerHTML = '<span class="hpLabel ">HP</span> ' + pokemon.stats[0].base_stat;
   card.appendChild(hp);
 
-  let pokemonImage = document.createElement("img");
+  const pokemonImage = document.createElement("img");
   pokemonImage.src = pokemon.sprites.other.home.front_default;
   pokemonImage.alt = pokemon.name;
   pokemonImage.className = 'pokemonImg';
   card.appendChild(pokemonImage);
 
-  let name = document.createElement("h2");
+  const name = document.createElement("h2");
   name.textContent = capitalizeFirstLetter(pokemon.name); // Apply capitalization
   name.className = 'poke-name';
   card.appendChild(name);
 
-  let types = document.createElement("div");
+  const types = document.createElement("div");
   types.className = 'types';
   pokemon.types.forEach(type => {
-    let span = document.createElement("span");
+    const span = document.createElement("span");
     span.textContent = type.type.name;
     span.style.backgroundColor = typeColor[type.type.name];
     types.appendChild(span);
   });
   card.appendChild(types);
 
-  let stats = document.createElement("div");
+  const stats = document.createElement("div");
   stats.className = 'stats';
 
-  let attack = document.createElement("p");
+  const attack = document.createElement("p");
   attack.innerHTML = '<span class="statLabel">Attack</span><span class="statValue">' + pokemon.stats[1].base_stat + '</span>';
   stats.appendChild(attack);
 
-  let defense = document.createElement("p");
+  const defense = document.createElement("p");
   defense.innerHTML = '<span class="statLabel">Defense</span><span class="statValue">' + pokemon.stats[2].base_stat + '</span>';
   stats.appendChild(defense);
-  let speed = document.createElement("p");
+  const speed = document.createElement("p");
   speed.innerHTML = '<span class="statLabel">Speed</span><span class="statValue">' + pokemon.stats[5].base_stat + '</span>';
   stats.appendChild(speed);
 
   card.appendChild(stats);
 
-  let primaryTypeColor = typeColor[pokemon.types[0].type.name];
+  const primaryTypeColor = typeColor[pokemon.types[0].type.name];
   styleCard(card, primaryTypeColor);
 
   document.getElementById("card-container").appendChild(card);
@@ -155,7 +155,7 @@ function createTypeButtons() {
     button.style.borderRadius = '50%';
     button.style.width = '48px';
     button.style.height = '48px';
-    let btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
+    const btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
     button.setAttribute('title', btnTxthover);
     const icon = document.createElement('img');
     icon.src = 'types/' + type + '.png';
