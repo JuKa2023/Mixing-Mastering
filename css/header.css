@@ -9,7 +9,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 10px 20px;
+    margin: 10px 20px;
+    position: relative;
 }
 
 .headerGrid .col {
@@ -79,6 +80,8 @@ header {
     border: solid 2px transparent;
     padding: 5px;
     box-sizing: border-box;
+    position: absolute;
+    right: 0;
 }
 
 .line {

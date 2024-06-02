@@ -41,13 +41,13 @@ async function init() {
   let url = `https://pokeapi.co/api/v2/pokemon?limit=${anzahlPokemon}&offset=0`;
   const pokemonWithoutDetails = await fetchData(url);
   allPokemon = await Promise.all(pokemonWithoutDetails.results.map(async (pokemon) => {
-      let detailedData = await fetchData(pokemon.url);
-      return detailedData;
+    let detailedData = await fetchData(pokemon.url);
+    return detailedData;
   }));
 
   // allPokemon.sort((a, b) => a.name.localeCompare(b.name));
   allPokemon.forEach(pokemon => {
-      createCard(pokemon);
+    createCard(pokemon);
   });
 }
 
@@ -55,7 +55,7 @@ async function suchePokemon(searchInput) {
   let filteredPokemon = allPokemon.filter(wantedPokemon => wantedPokemon.name.includes(searchInput.toLowerCase()));
   app.innerHTML = '';
   filteredPokemon.forEach(pokemon => {
-      createCard(pokemon);
+    createCard(pokemon);
   });
 }
 
@@ -74,7 +74,7 @@ async function fetchData(url) {
     let data = await response.json();
     return data;
   } catch (error) {
-      console.error(error);
+    console.error(error);
   }
 }
 
@@ -103,10 +103,10 @@ function createCard(pokemon) {
   let types = document.createElement("div");
   types.className = 'types';
   pokemon.types.forEach(type => {
-      let span = document.createElement("span");
-      span.textContent = type.type.name;
-      span.style.backgroundColor = typeColor[type.type.name];
-      types.appendChild(span);
+    let span = document.createElement("span");
+    span.textContent = type.type.name;
+    span.style.backgroundColor = typeColor[type.type.name];
+    types.appendChild(span);
   });
   card.appendChild(types);
 
@@ -153,8 +153,8 @@ function createTypeButtons() {
     button.textContent = " ";
     button.style.cursor = 'pointer';
     button.style.borderRadius = '50%';
-    button.style.width= '48px';
-    button.style.height= '48px';
+    button.style.width = '48px';
+    button.style.height = '48px';
     let btnTxthover = type.charAt(0).toUpperCase() + type.slice(1);
     button.setAttribute('title', btnTxthover);
     const icon = document.createElement('img');
@@ -175,7 +175,7 @@ function createTypeButton(type) {
   button.textContent = capitalizeFirstLetter(type);
   button.style.backgroundColor = typeColor[type];
   button.className = 'type-button'; // Add this class for potential styling via CSS
-  button.onclick = function() { filterByType(type); };
+  button.onclick = function () { filterByType(type); };
 
   return button;
 }
@@ -184,7 +184,7 @@ function filterByType(type) {
   const filteredPokemon = allPokemon.filter(pokemon => pokemon.types.some(pokemonType => pokemonType.type.name === type));
   app.innerHTML = '';
   filteredPokemon.forEach(pokemon => {
-      createCard(pokemon);
+    createCard(pokemon);
   });
 }
 
