@@ -165,7 +165,7 @@ function createTypeButtons() {
     icon.style.height = '24px';
     icon.classList.add(type);
     icon.classList.add('icon');
-    console.log(icon.src);
+    // console.log(icon.src);
     button.appendChild(icon);
   });
 }
